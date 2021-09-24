@@ -1,0 +1,1 @@
+docker-compose --project-name=true_com --file=docker/docker-compose.yml down 

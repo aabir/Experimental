@@ -1,0 +1,1 @@
+docker-compose --project-name=PostGreDoc --file=docker/docker-compose.yml up -d
