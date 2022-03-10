@@ -69,6 +69,7 @@ namespace PostGreBE.Service
             }
             if(await _userManager.CheckPasswordAsync(user, model.Password))
             {
+                authenticationModel.Id = user.Id;
                 authenticationModel.IsAuthenticated = true;
                 JwtSecurityToken jwtSecurityToken = await CreateJwtToken(user);
                 authenticationModel.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);

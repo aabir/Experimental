@@ -83,7 +83,6 @@ D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.AssemblyInfo
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.csproj.CoreCompileInputs.cache
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.MvcApplicationPartsAssemblyInfo.cache
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\staticwebassets\PostGreBE.StaticWebAssets.Manifest.cache
-D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\scopedcss\bundle\PostGreBE.styles.css
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.RazorTargetAssemblyInfo.cache
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.csproj.CopyComplete
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.dll
@@ -93,9 +92,7 @@ D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.csprojAssemblyReference.cache
 D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.MvcApplicationPartsAssemblyInfo.cs
-D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\staticwebassets\PostGreBE.StaticWebAssets.xml
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Castle.Windsor.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
@@ -185,3 +182,5 @@ D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnaly
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\exp\Practice\PostGreBE\BackEnd\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.csproj.AssemblyReference.cache
+D:\exp\Practice\PostGreBE\BackEnd\obj\Debug\netcoreapp3.1\PostGreBE.GeneratedMSBuildEditorConfig.editorconfig
