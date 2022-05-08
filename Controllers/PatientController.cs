@@ -36,9 +36,12 @@ namespace PostGreBE.Controllers
         }
 
         [HttpGet("{id}")]
-        public Patient Details(string id)
+        public ActionResult<Patient> Details(string id)
         {
-            return _patientService.GetPatientSingleRecord(id);
+            Patient data = _patientService.GetPatientSingleRecord(id);
+            if (data != null)
+                return Ok(data);
+            return BadRequest();
         }
 
         [HttpPut]

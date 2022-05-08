@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostGreBE", "PostGreBE.csproj", "{69AD4965-384D-4523-A5BB-D7B8CF665993}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostGreBE", "PostGreBE.csproj", "{69AD4965-384D-4523-A5BB-D7B8CF665993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Test", "..\API.Test\API.Test.csproj", "{636EC12C-EFC7-47F0-8CC9-AB619809256F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{69AD4965-384D-4523-A5BB-D7B8CF665993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69AD4965-384D-4523-A5BB-D7B8CF665993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69AD4965-384D-4523-A5BB-D7B8CF665993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636EC12C-EFC7-47F0-8CC9-AB619809256F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636EC12C-EFC7-47F0-8CC9-AB619809256F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636EC12C-EFC7-47F0-8CC9-AB619809256F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636EC12C-EFC7-47F0-8CC9-AB619809256F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
