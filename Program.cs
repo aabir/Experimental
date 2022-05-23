@@ -7,10 +7,7 @@ using Microsoft.Extensions.Logging;
 using PostGreBE.Data;
 using PostGreBE.Entity;
 using Serilog;
-using Serilog.Core;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace PostGreBE
@@ -58,7 +55,7 @@ namespace PostGreBE
                 host.Run();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Log.Fatal(ex, "The application failed to start.");
             }
@@ -67,7 +64,7 @@ namespace PostGreBE
                 Log.CloseAndFlush();
             }
 
-            
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -59,7 +59,7 @@ namespace PostGreBE.Controllers
         public IActionResult DeleteConfirmed(string id)
         {
             var data = _patientService.GetPatientSingleRecord(id);
-            if(data == null)
+            if (data == null)
             {
                 return NotFound();
             }
