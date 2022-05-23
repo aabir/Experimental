@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using PostGreBE.Constants;
 using PostGreBE.Entity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,7 +18,7 @@ namespace PostGreBE.Data
             //Seed Default User
             var defaultUser = new ApplicationUser { UserName = Authorization.default_username, Email = Authorization.default_email, EmailConfirmed = true, PhoneNumberConfirmed = true };
 
-            if(userManager.Users.All(u => u.Id != defaultUser.Id))
+            if (userManager.Users.All(u => u.Id != defaultUser.Id))
             {
                 await userManager.CreateAsync(defaultUser, Authorization.default_password);
                 await userManager.CreateAsync(defaultUser, Authorization.default_role.ToString());

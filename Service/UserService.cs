@@ -29,8 +29,7 @@ namespace PostGreBE.Service
 
         public async Task<string> RegisterAsync(RegisterModel model)
         {
-            var user = new ApplicationUser 
-            {
+            var user = new ApplicationUser {
                 UserName = model.UserName,
                 Email = model.Email,
                 FirstName = model.FirstName,
@@ -38,14 +37,14 @@ namespace PostGreBE.Service
             };
 
             var userWithSameEmail = await _userManager.FindByEmailAsync(model.Email);
-            if(userWithSameEmail == null)
+            if (userWithSameEmail == null)
             {
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, Authorization.default_role.ToString());
                 }
-                if(result.Errors.Count() > 0)
+                if (result.Errors.Count() > 0)
                 {
                     return $"Something went wrong please try again.";
                 }
@@ -61,13 +60,13 @@ namespace PostGreBE.Service
         {
             var authenticationModel = new AuthenticationModel();
             var user = await _userManager.FindByEmailAsync(model.Email);
-            if(user == null)
+            if (user == null)
             {
                 authenticationModel.IsAuthenticated = false;
                 authenticationModel.Message = $"No Account Registered with {model.Email}.";
                 return authenticationModel;
             }
-            if(await _userManager.CheckPasswordAsync(user, model.Password))
+            if (await _userManager.CheckPasswordAsync(user, model.Password))
             {
                 authenticationModel.Id = user.Id;
                 authenticationModel.IsAuthenticated = true;
@@ -91,7 +90,7 @@ namespace PostGreBE.Service
 
             var roleClaims = new List<Claim>();
 
-            for(int i = 0; i < roles.Count; i++)
+            for (int i = 0; i < roles.Count; i++)
             {
                 roleClaims.Add(new Claim("roles", roles[i]));
             }
@@ -121,12 +120,12 @@ namespace PostGreBE.Service
         public async Task<string> AddRoleAsync(AddRoleModel model)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
-            if(user == null)
+            if (user == null)
             {
                 return $"No accounts Registered with {model.Email}.";
             }
 
-            if(await _userManager.CheckPasswordAsync(user, model.Password))
+            if (await _userManager.CheckPasswordAsync(user, model.Password))
             {
                 var roleExits = Enum.GetNames(typeof(Authorization.Roles)).Any(x => x.ToLower() == model.Role.ToLower());
                 if (roleExits)

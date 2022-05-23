@@ -1,9 +1,7 @@
 ﻿using PostGreBE.Data;
 using PostGreBE.Entity;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PostGreBE.Service
 {

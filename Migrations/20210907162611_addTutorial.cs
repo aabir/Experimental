@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
 
 namespace PostGreBE.Migrations
 {
@@ -9,8 +9,7 @@ namespace PostGreBE.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Tutorials",
-                columns: table => new
-                {
+                columns: table => new {
                     id = table.Column<Guid>(nullable: false),
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),

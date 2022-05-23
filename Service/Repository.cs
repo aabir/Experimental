@@ -9,7 +9,7 @@ namespace PostGreBE.Service
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        
+
         private readonly AppDbContext context;
         private DbSet<T> entities;
         string errorMessage = string.Empty;
@@ -73,6 +73,6 @@ namespace PostGreBE.Service
             context.SaveChanges();
         }
 
-        
+
     }
 }

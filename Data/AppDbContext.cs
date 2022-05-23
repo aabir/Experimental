@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using PostGreBE.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PostGreBE.Data
 {
@@ -18,6 +14,6 @@ namespace PostGreBE.Data
         public DbSet<Company> Company { get; set; }
         public DbSet<Tutorial> Tutorials { get; set; }
         public DbSet<Monster> Monsters { get; set; }
-        
+
     }
 }

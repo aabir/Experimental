@@ -9,8 +9,7 @@ namespace PostGreBE.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Monsters",
-                columns: table => new
-                {
+                columns: table => new {
                     id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(nullable: true),

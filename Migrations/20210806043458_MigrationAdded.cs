@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using System;
 
 namespace PostGreBE.Migrations
 {
@@ -10,8 +10,7 @@ namespace PostGreBE.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Company",
-                columns: table => new
-                {
+                columns: table => new {
                     CompanyId = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     RecID = table.Column<string>(maxLength: 50, nullable: true),
@@ -52,8 +51,7 @@ namespace PostGreBE.Migrations
 
             migrationBuilder.CreateTable(
                 name: "patients",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true),
